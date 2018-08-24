@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="io.xview:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/io_xview_jar</output-path>
+    <root id="archive" name="io.xview.jar">
+      <element id="module-output" name="io.xview" />
+    </root>
+  </artifact>
+</component>
