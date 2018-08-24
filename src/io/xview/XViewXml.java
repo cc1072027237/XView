@@ -338,7 +338,7 @@ public class XViewXml {
         if (args != null && args.length > 0) {
             file = new File(args[0]);
         } else {
-            file = new File("");
+            file = new File(new File("").getAbsolutePath());
         }
 
         System.out.println("扫描XVIEW文件并生成XSD文件：" + file.getAbsolutePath());

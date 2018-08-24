@@ -12,5 +12,5 @@
         </complexType>
     </element>
     <element name="script" type="string"/>
-    <element name="process_child_nodes" fixed="" />
+    <element name="process_child_nodes" fixed=""/>
 </schema>
