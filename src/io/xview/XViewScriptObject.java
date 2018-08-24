@@ -56,7 +56,7 @@ public class XViewScriptObject {
         return loadUri;
     }
 
-    public void execute(String xsd, String tag, Map<String, Object> callAttributes, Object processChildNodesFunction) throws Exception {
+    public void execute(String xsd, String tag, Map<String, Object> callAttributes, String processChildNodesFunction) throws Exception {
         // 根据引用组件的XSD文档获取组件xview文件路径（同目录）
         String uri = this.path(xsd, tag + XView.FILE_EXT);
 

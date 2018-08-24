@@ -57,11 +57,11 @@ public class ScriptEnvironment {
 		} else if ("Oracle Nashorn".equals(scriptEngineFactory.getEngineName())) {
 //			String[] args = new String[] { };
 //			String[] args = new String[] { "--optimistic-types=false", "--language=es5", "--persistent-code-cache=true"/*, "--print-code=false"*/, "--print-mem-usage=false" };
-//			String[] args = new String[] { "--language=es6" };
-//			jdk.nashorn.api.scripting.NashornScriptEngineFactory nashornScriptEngineFactory = (jdk.nashorn.api.scripting.NashornScriptEngineFactory) scriptEngineFactory;
-//			scriptEngine = nashornScriptEngineFactory.getScriptEngine(args);
+			String[] args = new String[] { "--language=es6" };
+			jdk.nashorn.api.scripting.NashornScriptEngineFactory nashornScriptEngineFactory = (jdk.nashorn.api.scripting.NashornScriptEngineFactory) scriptEngineFactory;
+			scriptEngine = nashornScriptEngineFactory.getScriptEngine(args);
 			
-			scriptEngine = scriptEngineFactory.getScriptEngine();
+//			scriptEngine = scriptEngineFactory.getScriptEngine();
 		} else if ("Mozilla Rhino".equals(scriptEngineFactory.getEngineName())) {
 //			com.sun.script.javascript.RhinoScriptEngineFactory rhinoScriptEngineFactory = (com.sun.script.javascript.RhinoScriptEngineFactory) scriptEngineFactory;
 			

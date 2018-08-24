@@ -71,8 +71,8 @@ public class XViewScript {
                             this.forEachChildNodes(codeBuilder, node);
                         } else if (XView.TAG_PROCESS_CHILD_NODES.equalsIgnoreCase(name.getName())) {
                             // xview:processChildNodes 调用子内容
-                            codeBuilder.appendScript("if(").appendScript(XView.PROCESS_CHILD_NODES_FUNCTION).appendScript("){")
-                                    .appendScript(XView.PROCESS_CHILD_NODES_FUNCTION).appendScript("();}\n");
+                            codeBuilder.appendScript("if(").appendScript(XView.PROCESS_CHILD_NODES_FUNCTION).appendScript("){eval(")
+                                    .appendScript(XView.PROCESS_CHILD_NODES_FUNCTION).appendScript(")();}\n");
                         } else {
                             throw new XViewException(this.xview.getUri() + " -> unknow tag [" + ((Element) node).getTagName() + "]");
                         }
@@ -117,9 +117,9 @@ public class XViewScript {
                         codeBuilder.appendScript(name.getName());
                         codeBuilder.appendScript("\",");
                         codeBuilder.appendScript(callAttributeScript.toString());
-                        codeBuilder.appendScript(",");
-                        codeBuilder.appendScript(closureCodeBuilder.getScript());
-                        codeBuilder.appendScript(");\n");
+                        codeBuilder.appendScript(",\"");
+                        codeBuilder.appendScript(toSafeString(closureCodeBuilder.getScript()));
+                        codeBuilder.appendScript("\");\n");
                     }
                 } else {
                     throw new XViewException(this.xview.getUri() + " -> unknow tag [" + ((Element) node).getTagName() + "]");

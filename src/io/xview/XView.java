@@ -76,7 +76,7 @@ public class XView {
         return xviewScript;
     }
 
-    public void execute(OutputStream outputStream, Map<String, Object> callAttributes, Object processChildNodesFunction) {
+    public void execute(OutputStream outputStream, Map<String, Object> callAttributes, String processChildNodesFunction) {
         Map<String, Object> calledAttributes = new HashMap<>();
 
         // 填充默认值
@@ -110,56 +110,6 @@ public class XView {
 
         // 调用此文件
         this.xviewManager.execute(this, calledAttributes, outputStream);
-    }
-
-    static int count = 0;
-    static long startTime = System.currentTimeMillis();
-
-    public static void main(String[] args) throws Exception {
-        XViewManager manager = new XViewManager(new XViewManager.DefaultXViewLoader(), false, 50, true);
-
-        for (int i = 0; i < 1; i++) {
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    while (true) {
-                        if (count % 100 == 0) {
-                            synchronized (manager) {
-                                if (System.currentTimeMillis() - startTime > 1000) {
-                                    System.err.println(count);
-                                    count = 0;
-                                    startTime = System.currentTimeMillis();
-                                }
-                            }
-                        }
-
-                        XView xview = manager.load("/io/xview/test/a.page.xview");
-                        System.out.println(xview.getXViewScript().getScript());
-//                        xview.execute(new EmptyOutputStream(), null, null);
-//                        count++;
-                        xview.execute(System.err, null, null);
-                        break;
-                    }
-                }
-            }).start();
-        }
-    }
-
-    private static class EmptyOutputStream extends OutputStream {
-
-        @Override
-        public void write(int b) throws IOException {
-
-        }
-
-        public void write(byte b[], int off, int len) throws IOException {
-
-        }
-
-        public void write(byte b[]) throws IOException {
-
-        }
-
     }
 
 }
