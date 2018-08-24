@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4a9fa329-0a82-48a4-b830-0f0e608466e8" name="默认的" comment="">
       <change beforePath="" afterPath="$PROJECT_DIR$/release/io.xview-20180824.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/io/xview/xview.xsd" />
       <change beforePath="$PROJECT_DIR$/release/xview.xsd" afterPath="$PROJECT_DIR$/release/xview.xsd" />
-      <change beforePath="$PROJECT_DIR$/src/io/xview/xview.xsd" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +16,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="xview.xsd" pinned="false" current-in-tab="true">
+      <file leaf-file-name="xview.xsd" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/release/xview.xsd">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="81">
               <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xview.xsd" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/io/xview/xview.xsd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -90,12 +100,6 @@
               <item name="io.xview" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="io.xview" type="b2602c69:ProjectViewProjectNode" />
-              <item name="io.xview" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="xview" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -157,6 +161,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\360DISK\dev\java\io.xview\src\io\xview" />
       <recent name="D:\360DISK\dev\java\io.xview\release" />
       <recent name="D:\360DISK\dev\java\io.xview\src" />
     </key>
@@ -295,12 +300,12 @@
       <updated>1535088127681</updated>
       <workItem from="1535088129625" duration="1398000" />
       <workItem from="1535090125559" duration="82000" />
-      <workItem from="1535090258163" duration="3299000" />
+      <workItem from="1535090258163" duration="3340000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4779000" />
+    <option name="totallyTimeSpent" value="4820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -370,18 +375,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/xview/xview.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/release/xview.xsd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/xview/xview.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
           <folding />
         </state>
       </provider>
